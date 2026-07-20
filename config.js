@@ -37,5 +37,6 @@ window.LETTER_CONFIG = {
   replyTitle: "Reply to me",
   replyIntro: "Cậu có thể viết điều cậu muốn nói ở đây. Tin nhắn sẽ được gửi riêng qua tớ.",
   replyPlaceholder: "Viết gì đó cho tớ nhé…",
-  replySuccess: "Thư của bạn đã được chuyển thành công ✈️"
+  replySuccess: "Thư của bạn đã được chuyển thành công ✈️",
+  finalMessage: "Maybe the next conversation should happen in person. 🤍"
 };
