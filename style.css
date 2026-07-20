@@ -546,24 +546,46 @@ main {
 .opening-text{margin-top:26px;font-size:19px;font-weight:700;animation:textPulse 1.2s ease-in-out infinite}@keyframes textPulse{0%,100%{opacity:.5}50%{opacity:1}}
 
 .final-message {
-  margin-top: 22px;
+  margin: 0;
   color: #17324f;
-  font-size: 20px;
+  font-size: 28px;
   font-style: italic;
   font-weight: 700;
   line-height: 1.5;
-  opacity: 0;
-  animation: finalMessageFade 1.4s 1.8s ease forwards;
+  text-align: center;
 }
 
-@keyframes finalMessageFade {
+.modal-card.final-only {
+  min-height: 390px;
+  display: grid;
+  place-items: center;
+  padding: 45px;
+}
+
+/* Ẩn tất cả nội dung cũ trong hộp Reply */
+.modal-card.final-only > *:not(#finalMessage) {
+  display: none !important;
+}
+
+/* Chỉ hiện câu kết */
+.modal-card.final-only #finalMessage {
+  display: block !important;
+  max-width: 470px;
+  opacity: 0;
+  animation: finalOnlyFade 1.4s ease forwards;
+}
+
+@keyframes finalOnlyFade {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(15px) scale(0.97);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
+
+
+
