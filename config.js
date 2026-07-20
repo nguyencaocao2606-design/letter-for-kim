@@ -30,8 +30,8 @@ window.LETTER_CONFIG = {
   ],
 
   songIntro: "Tớ có một bài hát muốn dành tặng cậu",
-  songButtonText: "Nghe cùng tớ nhé 🎧",
-  songUrl: "https://open.spotify.com/track/1lNHWPDvKEbamKezpLq7HW?si=adbf216043be46db",
+songButtonText: "Nghe cùng tớ nhé 🎧",
+songUrl: "https://open.spotify.com/track/1lNHWPDvKEbamKezpLq7HW?si=adbf216043be46db",
 
   signature: "Mong được gặp cậu ngoài những dòng tin nhắn 🦄 ⭐ 🌟 ✨ 💫",
   replyTitle: "Reply to me",
