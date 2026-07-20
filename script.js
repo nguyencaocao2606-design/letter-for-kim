@@ -117,7 +117,8 @@
       form.classList.add("hidden");
       $("deliveryScene").classList.remove("hidden");
       $("deliveryText").textContent = cfg.replySuccess;
-      burst();
+$("finalMessage").textContent = cfg.finalMessage;
+burst();
     } catch (err) {
       console.error(err);
       status.textContent = "Chưa gửi được. Kiểm tra endpoint Formspree và xác nhận email Formspree của bạn.";
