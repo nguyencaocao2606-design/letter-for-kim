@@ -115,10 +115,17 @@
       }
 
       form.classList.add("hidden");
-      $("deliveryScene").classList.remove("hidden");
-      $("deliveryText").textContent = cfg.replySuccess;
-      $("finalMessage").textContent = cfg.finalMessage;
-      burst();
+$("deliveryScene").classList.remove("hidden");
+$("deliveryText").textContent = cfg.replySuccess;
+
+burst();
+
+setTimeout(() => {
+  document.querySelector(".modal-card").classList.add("final-only");
+
+  $("finalMessage").textContent = cfg.finalMessage;
+  $("finalMessage").classList.remove("hidden");
+}, 2400);
     } catch (err) {
       console.error(err);
       status.textContent = "Chưa gửi được. Kiểm tra endpoint Formspree và xác nhận email Formspree của bạn.";
