@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d315e" />
+  <title>A tiny letter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="fallingStars" aria-hidden="true"></div>
+  <div id="shootingStars" aria-hidden="true"></div>
+
+  <main>
+    <section id="quizScreen" class="screen">
+      <div class="quiz-card">
+        <div class="lock-icon">🔐</div>
+        <p class="quiz-note">Trả lời đúng câu hỏi này để mở lá thư nhé.</p>
+
+        <div class="question-box" id="quizQuestion"></div>
+
+        <form id="quizForm">
+          <input id="quizAnswer" type="text" autocomplete="off" placeholder="Nhập câu trả lời..." />
+          <button type="submit">Mở khóa lá thư ✨</button>
+          <p id="quizError" class="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="starScreen" class="screen hidden">
+      <div class="envelope-screen-content">
+        <h1 id="envelopeTitle"></h1>
+
+        <button id="starButton" class="main-star" type="button" aria-label="Mở lá thư">
+          ★
+        </button>
+
+        <p class="star-instruction">Nhấp vào ngôi sao để mở thư nhé ✨</p>
+      </div>
+    </section>
+
+    <section id="envelopeScreen" class="screen hidden">
+      <div class="envelope-stage">
+        <div id="envelope" class="envelope">
+          <div class="envelope-shadow"></div>
+          <div class="envelope-back"></div>
+          <div class="envelope-letter">
+            <div class="mini-letter-title">A tiny letter</div>
+            <div class="mini-letter-name">for <span id="recipientPreview"></span></div>
+          </div>
+          <div class="envelope-left"></div>
+          <div class="envelope-right"></div>
+          <div class="envelope-bottom"></div>
+          <div class="envelope-flap"></div>
+          <div class="seal">★</div>
+        </div>
+        <p class="opening-text">Đang mở lá thư...</p>
+      </div>
+    </section>
+
+    <section id="letterScreen" class="screen hidden letter-screen">
+      <article class="letter-card">
+        <header class="letter-header">
+          <p id="tinyTitle" class="tiny-title"></p>
+          <h2 id="mainTitle"></h2>
+        </header>
+
+        <div class="recipient-line">
+          Dear <span id="recipientLetter"></span>,
+        </div>
+
+        <div id="paper" class="paper">
+          <div id="letterParagraphs"></div>
+
+          <section class="song-gift">
+            <div class="song-icon">🎵</div>
+            <div class="song-copy">
+              <p id="songIntro"></p>
+              <button id="songButton" type="button">
+                <span>▶</span>
+                <span id="songButtonText"></span>
+              </button>
+            </div>
+          </section>
+
+          <p id="signature" class="signature"></p>
+
+          <button id="replyOpen" class="reply-open" type="button">Reply to me 💬</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div id="replyModal" class="modal hidden">
+    <div class="modal-card">
+      <button id="replyClose" class="modal-close" type="button">×</button>
+      <h3 id="replyTitle"></h3>
+      <p id="replyIntro"></p>
+
+      <form id="replyForm">
+        <textarea id="replyMessage" name="message" required rows="7"></textarea>
+        <button id="replySubmit" type="submit">Gửi câu trả lời ✈️</button>
+        <p id="replyStatus" class="status"></p>
+      </form>
+
+      <div id="deliveryScene" class="delivery-scene hidden">
+        <div class="route">
+          <span>🇻🇳</span>
+          <div class="route-line"><span class="delivery-plane">✈️</span></div>
+          <span>🇩🇪</span>
+        </div>
+        <p id="deliveryText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
