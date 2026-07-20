@@ -544,3 +544,26 @@ main {
 .envelope.opening .envelope-flap{animation:openFlap .75s ease forwards}.envelope.opening .seal{animation:sealFade .35s ease forwards}.envelope.opening .envelope-letter{animation:letterRise 1.05s .48s ease forwards}
 @keyframes openFlap{to{transform:rotateX(180deg);z-index:1}}@keyframes sealFade{to{opacity:0}}@keyframes letterRise{to{transform:translateY(-120px)}}
 .opening-text{margin-top:26px;font-size:19px;font-weight:700;animation:textPulse 1.2s ease-in-out infinite}@keyframes textPulse{0%,100%{opacity:.5}50%{opacity:1}}
+
+.final-message {
+  margin-top: 22px;
+  color: #17324f;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5;
+  opacity: 0;
+  animation: finalMessageFade 1.4s 1.8s ease forwards;
+}
+
+@keyframes finalMessageFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
