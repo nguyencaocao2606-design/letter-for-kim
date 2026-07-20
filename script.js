@@ -125,7 +125,7 @@ setTimeout(() => {
 
   $("finalMessage").textContent = cfg.finalMessage;
   $("finalMessage").classList.remove("hidden");
-}, 2000);
+}, 4000);
     } catch (err) {
       console.error(err);
       status.textContent = "Chưa gửi được. Kiểm tra endpoint Formspree và xác nhận email Formspree của bạn.";
