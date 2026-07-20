@@ -19,7 +19,7 @@
   $("tinyTitle").textContent = cfg.tinyTitle;
   $("mainTitle").textContent = cfg.mainTitle;
   $("recipientLetter").textContent = cfg.recipient;
-  $("recipientPreview").textContent = cfg.recipient;
+  
   $("replyTitle").textContent = cfg.replyTitle;
   $("replyIntro").textContent = cfg.replyIntro;
   $("replyMessage").placeholder = cfg.replyPlaceholder;
