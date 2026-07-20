@@ -6,7 +6,7 @@ window.LETTER_CONFIG = {
   formspreeEndpoint: "https://formspree.io/f/xeeyqjbg",
 
   tinyTitle: "A TINY LETTER FROM 9,000 KM AWAY",
-  mainTitle: "Perhaps, some meetings are meant to find us.",
+  mainTitle: "Perhaps, some meetings are meant to find us!",
   envelopeTitle: "A tiny letter from 9,000km away",
 
   letterParagraphs: [
@@ -22,7 +22,7 @@ window.LETTER_CONFIG = {
 
     "Dĩ nhiên tớ cũng không muốn cậu cảm thấy mình bị ràng buộc hay có áp lực phải chờ tớ. Nếu trong khoảng thời gian này cậu gặp được một người thật sự phù hợp, hoặc cảm thấy có một cơ hội khác phù hợp hơn, thì tớ cũng tôn trọng. Tớ hoàn toàn không có vấn đề gì với điều đó cả, vì tớ hiểu cuộc sống luôn có những điều mình không thể biết trước.",
 
-    "Từ lúc còn ở Việt Nam đến khi sang đây, tớ cũng chưa từng tìm hiểu ai, và thật sự cũng chưa có nhu cầu tìm hiểu ai ở Đức cả. Có lẽ vì tớ luôn nghĩ nếu gặp đúng người thì dù sớm hay muộn cũng sẽ gặp.",
+    "Từ lúc còn ở Việt Nam đến khi sang đây, tớ cũng chưa từng tìm hiểu ai, và cũng không có nhu cầu tìm hiểu ai ở Đức cả. Có lẽ vì tớ luôn nghĩ nếu gặp đúng người thì dù sớm hay muộn cũng sẽ gặp.",
 
     "Nên biết đâu đến lúc tớ về Việt Nam, cả hai vẫn còn nhớ đến nhau, vẫn còn muốn gặp nhau và vẫn còn muốn cho nhau một cơ hội, thì tớ nghĩ đó sẽ là một điều rất đáng để thử. Tớ cũng muốn mọi thứ diễn ra một cách đơn giản và tự nhiên.",
 
